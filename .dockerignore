@@ -1,0 +1,29 @@
+# Node modules and logs
+node_modules
+npm-debug.log*
+
+# Build artifacts
+dist
+build
+
+# Git and version control
+.git
+.gitignore
+.husky
+
+# Documentation files
+*.md
+
+# Editor/IDE files
+*.swp
+*.swo
+*.swn
+*.bak
+.DS_Store
+.vscode
+.idea
+
+# Temporary files
+*.tmp
+*.log
+*.cache

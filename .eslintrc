@@ -1,0 +1,36 @@
+{
+    "env": {
+        "browser": true,
+        "es2023": true
+    },
+    "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:react/recommended", "plugin:react-hooks/recommended", "eslint-config-prettier", "plugin:prettier/recommended"],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "plugins": ["react", "react-hooks", "@typescript-eslint"],
+    "rules": {
+        "prettier/prettier": 0,
+        "@typescript-eslint/no-unused-vars": [
+            "warn",
+            {
+                "args": "all",
+                "argsIgnorePattern": "^_",
+                "varsIgnorePattern": "^_"
+            }
+        ],
+        "@typescript-eslint/no-explicit-any": "off", // Allows the use of 'any' type
+        "react/react-in-jsx-scope": "off", // Turn off the rule that requires 'React' to be in scope for JSX
+        "react-hooks/exhaustive-deps": "off", // Checks effect dependencies
+        "no-console": "warn"
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }
+}
